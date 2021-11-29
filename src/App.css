@@ -1,38 +1,195 @@
-.App {
-  text-align: center;
+/* //////////////////////////////////////////////////////// APP COMPONENT */
+.App{
+    background-color: #C3E0E5;
+    padding: 1.5rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-wrapper{
+    height: 85vh;
+    padding: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.homepage-search{
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.tv-art{
+    background-image: url("https://bl6pap004files.storage.live.com/y4mVYztKgaGbVhknGnnAu_UH5qaCwMm2whQDDCIW4sb1jS1W-nGsm-XMGTU1lVLaw_X9TgNTnw0p4Yzx7piZBJ1M3SL4va88Vn8vIf-R_uf1MH4dbEcmcqv6XQdp8e-cKuBiFx2gFnjeQkqaI_briWpXyfqqWduHIL3aQ2HIvUS5ZF0e41ibvOMkCpDhJXle6nQ?width=512&height=512&cropmode=none");
+    background-size: contain;
+    opacity: 0.8;
 }
 
-.App-link {
-  color: #61dafb;
+/* // Small devices (landscape phones, 576px and below) */
+@media (max-width: 576px) { 
+    .tv-art{
+        height: 256px;
+        width: 256px;
+    }
+    
+ }
+
+ /* // Large devices (desktops, greater than 1200px) */
+@media (min-width: 1200px) { 
+    .tv-art{
+    height: 512px;
+    width: 512px;
+    }
+ }
+
+ /* //////////////////////////////////////////////////////// HEADER COMPONENT */
+
+ @import url('https://fonts.googleapis.com/css2?family=Life+Savers:wght@700&display=swap');
+
+.Header{
+    border-radius: 25px;
+    color: #274472;
+    font-family: 'Life Savers', cursive;
+    text-shadow: 0 0 1px grey;
+    width: fit-content;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-link{
+    text-decoration: none;
 }
+
+/* // Small devices (landscape phones, 576px and below) */
+@media (max-width: 576px) { 
+    .Header p{
+        font-size: 0.8rem;
+    }
+ }
+
+  /* // Large devices (desktops, greater than 1200px) */
+  @media (min-width: 1200px) {
+    .Header h1{
+        font-size: 3rem;
+    }
+ }
+
+/* //////////////////////////////////////////////////////// SEARCH COMPONENT */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+.Search{
+    font-family: 'Outfit', sans-serif;
+}
+
+.Search .form-control{
+    box-shadow: none;
+}
+
+.Search button{
+    border-radius: 0px 5px 5px 0px;
+}
+
+ /* // Large devices (desktops, greater than 1200px) */
+ @media (min-width: 1200px) {
+    .Search .input-group-text{
+        font-size: 2rem;
+    }
+ }
+
+/* //////////////////////////////////////////////////////// SPINNER COMPONENT */
+
+.Spinner{
+    align-items: center;
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+}
+
+/* //////////////////////////////////////////////////////// ROUTE>SHOWS COMPONENT */
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+.Shows{
+    background-color: #C3E0E5;
+    min-height: 100vh;
+    padding: 1.5rem;
+}
+
+.show-title{
+    font-family: 'Outfit', sans-serif;
+}
+
+.search-column{
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card-right{
+    font-family: 'Outfit', sans-serif;
+}
+
+/* // Small devices (landscape phones, 576px and below) */
+@media (max-width: 576px) {
+
+    .card-left{
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .card-right{
+        text-align: center;
+    }
+
+    .Shows{
+        padding: 0.8rem;
+    }
+    
+}
+
+/* //////////////////////////////////////////////////////// ROUTE>SHOWID COMPONENT */
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+.ShowId{
+    background-color: #C3E0E5;
+    min-height: 100vh;
+    padding: 1.5rem;
+}
+
+.detail-show-title{
+    font-family: 'Outfit', sans-serif;
+}
+
+.search-column{
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.detail-card-right{
+    font-family: 'Outfit', sans-serif;
+}
+
+/* // Small devices (landscape phones, 576px and below) */
+@media (max-width: 576px) {
+
+    .show-detail-image{
+        width: 256px;
+    }
+
+    .ShowId{
+        padding: 0.8rem;
+    }
+
+ }
+
+ /* // Large devices (desktops, greater than 1200px) */
+@media (min-width: 1200px) {
+
+    .show-detail-image{
+        width: 512px;
+    }
+
+    .detail-card-left{
+        text-align: center;
+    }
+
+    .detail-card-right{
+        font-size: 1.5rem;
+    }
+
+ }
